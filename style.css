@@ -1,4 +1,4 @@
-/* style.css - Portfolio Stylesheet for Osama Akhter Mohammed */
+/* style.css - Portfolio Stylesheet for Mohammed Osama Akhter */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 /* Color Variables and Theme System */
@@ -663,6 +663,10 @@ header {
     margin-top: 0.25rem; /* aligns icon cleanly with first line of text */
     font-size: 1.1rem;
     flex-shrink: 0;
+}
+
+.about-resume-btn {
+    margin-top: 1.8rem;
 }
 
 .about-info h3 {
