@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osama Akhter Mohammed | Business Analytics & Operations Management Portfolio</title>
+
+    <!-- Meta tags for SEO -->
+    <meta name="description"
+        content="Portfolio of Osama Akhter Mohammed, a Business Analytics & Operations Management professional. Featuring projects in workforce planning, risk frameworks, and hospitality operations coordination.">
+    <meta name="keywords"
+        content="Osama Akhter Mohammed, Business Analytics, Operations Management, Workforce Planning, Hospitality Operations, Event Coordination, Power BI, SQL, Python">
+    <meta name="author" content="Osama Akhter Mohammed">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Navigation Header -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">Osama Akhter <span>Mohammed</span></a>
+
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="#about" class="active">About</a></li>
+                    <li class="nav-item"><a href="#experience">Experience</a></li>
+                    <li class="nav-item"><a href="#projects">Projects</a></li>
+                    <li class="nav-item"><a href="#skills">Skills</a></li>
+                    <li class="nav-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-controls">
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark/light theme"
+                    title="Toggle theme">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" title="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero-grid">
+
+                    <!-- Left Column: Hero Content -->
+                    <div class="hero-content">
+                        <div class="hero-tagline">Business Analytics & Operations Control</div>
+                        <h1>
+                            <span class="name">Osama Akhter Mohammed</span>
+                            <span class="highlight">Data-Driven Operations</span>
+                        </h1>
+                        <p class="hero-description">
+                            Leveraging analytics, statistical modeling, and hands-on coordination to optimize resource
+                            allocation, contain costs, and deliver seamless operations and hospitality management.
+                        </p>
+
+                        <div class="hero-btns">
+                            <a href="#projects" class="btn btn-primary">View Projects <i
+                                    class="fas fa-arrow-right"></i></a>
+                            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                        </div>
+
+                        <div class="hero-stats">
+                            <div class="hero-stat-item">
+                                <h4 id="stat-projects">5+</h4>
+                                <p>Major Corporate Engagements</p>
+                            </div>
+                            <div class="hero-stat-item">
+                                <h4 id="stat-efficiency">15%<span>+</span></h4>
+                                <p>Operations Efficiency Gain</p>
+                            </div>
+                            <div class="hero-stat-item">
+                                <h4 id="stat-sla">100%</h4>
+                                <p>On-Time Deliverables</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Interactive Dashboard Widget -->
+                    <div class="hero-visual">
+                        <div class="dashboard-widget">
+                            <div class="dashboard-header">
+                                <div class="dashboard-title">
+                                    <span class="dashboard-dot"></span>
+                                    <span>Interactive Optimization Widget</span>
+                                </div>
+                                <div class="dashboard-controls">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+
+                            <div class="dashboard-metric">
+                                <div class="metric-val" id="metric-value">91.8%</div>
+                                <div class="metric-label" id="metric-label">Projected Productivity</div>
+                            </div>
+
+                            <div class="dashboard-slider-container">
+                                <label for="slider-workforce">Workforce Utilization: <span class="val-display"
+                                        id="workforce-val">80%</span></label>
+                                <input type="range" id="slider-workforce" class="dashboard-slider" min="50" max="100"
+                                    value="80" aria-label="Adjust workforce utilization">
+                            </div>
+
+                            <div class="dashboard-slider-container">
+                                <label for="slider-process">Process Automation: <span class="val-display"
+                                        id="process-val">40%</span></label>
+                                <input type="range" id="slider-process" class="dashboard-slider" min="10" max="90"
+                                    value="40" aria-label="Adjust process automation level">
+                            </div>
+
+                            <div class="dashboard-chart-preview">
+                                <div class="chart-bar" id="bar-q1" data-label="Q1" style="height: 60%;"></div>
+                                <div class="chart-bar" id="bar-q2" data-label="Q2" style="height: 70%;"></div>
+                                <div class="chart-bar" id="bar-q3" data-label="Q3" style="height: 80%;"></div>
+                                <div class="chart-bar" id="bar-q4" data-label="Q4" style="height: 91.8%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section fade-in">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About Me</h2>
+                    <p>Fusing rigorous business analysis with administrative execution to streamline complex workflows.
+                    </p>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Left: Profile Headshot -->
+                    <div class="about-image-container">
+                        <img src="profile.jpg" alt="Osama Akhter Mohammed - Professional Headshot">
+                    </div>
+
+                    <!-- Middle: Info & Professional Narrative -->
+                    <div class="about-info">
+                        <h3>Bridging Data Insights and Operational Execution</h3>
+                        <ul class="about-checklist">
+                            <li><i class="fas fa-check-circle"></i> <span><strong>Operations Specialist:</strong> Dedicated to transforming complex workflows into streamlined, efficient systems by combining quantitative analysis with active, on-the-ground management.</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span><strong>Analytical Frameworks:</strong> Specialized in utilizing statistical data modeling and structured coordination to solve physical logistics, resource allocation, and capacity challenges.</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span><strong>Execution Record:</strong> Experienced in managing corporate partner events, site labor forecasting, auditing operational bottlenecks, and engineering custom Power BI/Excel resource planners.</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Right: Academic Credentials -->
+                    <div class="education-cards">
+                        <h3>Academic Foundation</h3>
+
+                        <div class="edu-card">
+                            <div class="edu-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="edu-details">
+                                <h4>Master of Science in Business Analytics</h4>
+                                <div class="school">St. Francis College, Brooklyn, NY</div>
+                                <span class="year">Jan 2024 – Dec 2025</span>
+                            </div>
+                        </div>
+
+                        <div class="edu-card">
+                            <div class="edu-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="edu-details">
+                                <h4>Bachelor of Business Administration (BBA)</h4>
+                                <div class="school">St. Joseph's Degree College, Hyderabad, India</div>
+                                <span class="year">June 2020 – June 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section fade-in">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Professional Experience</h2>
+                    <p>Demonstrated history in operations control, hospitality logistics, and high-impact client
+                        management.</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- Timeline Card: Maaz Developers -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-date">Jan. 2022 – Aug. 2024</div>
+                            <h3 class="timeline-role">Operations & Hospitality Coordinator</h3>
+                            <div class="timeline-company"><i class="fas fa-building"></i> Maaz Developers</div>
+
+                            <ul class="timeline-highlights">
+                                <li>Directly supervised front-of-house operations, client hosting, and facility
+                                    scheduling for commercial real estate developments.</li>
+                                <li>Coordinated corporate event planning and hospitality arrangements, ensuring seamless
+                                    collaboration across external vendors and internal coordinators.</li>
+                                <li>Utilized JIRA for operational task tracking, backlog management, and process review
+                                    to ensure smooth communication channels.</li>
+                                <li>Implemented rigorous client relations workflows, maintaining operational standards
+                                    during high-priority executive site tours.</li>
+                            </ul>
+
+                            <div class="client-list">
+                                <h5>Major Client Engagements</h5>
+                                <div class="client-badges">
+                                    <span class="client-badge"><i class="fas fa-building"></i> Aparna Constructions (Jan
+                                        2022 – Aug 2022)</span>
+                                    <span class="client-badge"><i class="fas fa-city"></i> Prestige Group (Sep 2022 –
+                                        Jan 2023)</span>
+                                    <span class="client-badge"><i class="fas fa-home"></i> My Home Group (Feb 2023 – Jun
+                                        2023)</span>
+                                    <span class="client-badge"><i class="fas fa-hotel"></i> Lemon Tree Hotels & Taj
+                                        Banjara (Jul 2023 – Oct 2023)</span>
+                                    <span class="client-badge"><i class="fas fa-lightbulb"></i> T-Hub Hyderabad ( 2022 -
+                                        2023)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section fade-in">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Key Projects</h2>
+                    <p>Analyzing operational risks and modeling workforce resources to maximize corporate throughput.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: IT Outsourcing Strategy -->
+                    <div class="project-card glass-card">
+                        <div class="project-content">
+                            <div class="project-badge">Academic Research Framework</div>
+                            <h3 class="project-title">Global IT Outsourcing: IT Strategic Plan for Sprout Social</h3>
+                            <ul class="project-bullet-list">
+                                <li>Conducted strategic data analysis of global IT outsourcing frameworks, targeting
+                                    cost optimization, infrastructure scalability, and performance metrics.</li>
+                                <li>Evaluated communication barriers, governance structures, and operational risks to
+                                    support strategic decision-making and business scalability.</li>
+                            </ul>
+
+                            <div class="project-metrics-grid">
+                                <div class="proj-metric-item">
+                                    <span class="num accent">22%</span>
+                                    <span class="lbl">Cost Containment</span>
+                                </div>
+                                <div class="proj-metric-item">
+                                    <span class="num">Low</span>
+                                    <span class="lbl">Risk Threshold</span>
+                                </div>
+                                <div class="proj-metric-item">
+                                    <span class="num">99.8%</span>
+                                    <span class="lbl">SLA Efficiency</span>
+                                </div>
+                            </div>
+
+                            <div class="project-tags">
+                                <span class="project-tag">Risk Assessment</span>
+                                <span class="project-tag">Cost Analysis</span>
+                                <span class="project-tag">Excel Modeling</span>
+                                <span class="project-tag">JIRA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Workforce Planning & Resource Optimization Dashboard -->
+                    <div class="project-card glass-card">
+                        <div class="project-content">
+                            <div class="project-badge">Analytics & Modeling Portfolio</div>
+                            <h3 class="project-title">Workforce Planning & Resource Optimization (Excel/Power BI
+                                Dashboard)</h3>
+                            <ul class="project-bullet-list">
+                                <li>Designed a resource allocation analysis model using Excel/Power BI to analyze
+                                    staffing patterns and optimize labor utilization.</li>
+                                <li>Identified shift allocation inefficiencies and established a KPI reporting framework
+                                    for monitoring workforce performance.</li>
+                            </ul>
+
+                            <div class="project-metrics-grid">
+                                <div class="proj-metric-item">
+                                    <span class="num accent">18%</span>
+                                    <span class="lbl">Idle Time Reduced</span>
+                                </div>
+                                <div class="proj-metric-item">
+                                    <span class="num">120+</span>
+                                    <span class="lbl">Staff Monitored</span>
+                                </div>
+                                <div class="proj-metric-item">
+                                    <span class="num">94.5%</span>
+                                    <span class="lbl">Forecast Accuracy</span>
+                                </div>
+                            </div>
+
+                            <div class="project-tags">
+                                <span class="project-tag">Power BI</span>
+                                <span class="project-tag">SQL Server</span>
+                                <span class="project-tag">Python (Pandas)</span>
+                                <span class="project-tag">Workforce Modeling</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section fade-in">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Technical & Professional Skills</h2>
+                    <p>A comprehensive matrix of technical tools, workflow optimization systems, and business domain
+                        competence.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Category 1: Analytics & Technical Skills -->
+                    <div class="skill-category glass-card">
+                        <h3 class="skill-category-title">
+                            <i class="fas fa-chart-pie"></i>
+                            <span>Analytics & Technical Skills</span>
+                        </h3>
+                        <div class="skills-text-list">
+                            <div class="skills-text-item">
+                                <span>Business Analytics & Data Analysis</span>
+                                <span class="skills-level-badge">Advanced</span>
+                            </div>
+                            <div class="skills-text-item">
+                                <span>Advanced Microsoft Excel (Pivots, Dashboards)</span>
+                                <span class="skills-level-badge">Expert</span>
+                            </div>
+                            <div class="skills-text-item">
+                                <span>Power BI & Tableau</span>
+                                <span class="skills-level-badge">Advanced</span>
+                            </div>
+                            <div class="skills-text-item">
+                                <span>SQL (Basic) & Python (Pandas, NumPy)</span>
+                                <span class="skills-level-badge">Intermediate</span>
+                            </div>
+                            <div class="skills-text-item">
+                                <span>JIRA, Data Visualization & KPI Reporting</span>
+                                <span class="skills-level-badge">Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 2: Operations Control -->
+                    <div class="skill-category glass-card">
+                        <h3 class="skill-category-title">
+                            <i class="fas fa-sliders-h"></i>
+                            <span>Operations Control</span>
+                        </h3>
+                        <div class="skills-text-list">
+                            <div class="skills-text-item">
+                                <span>Workforce Capacity Planning</span>
+                                <span class="skills-level-badge">Advanced</span>
+                            </div>
+                            <div class="skills-text-item">
+                                <span>Logistics & Event Coordination</span>
+                                <span class="skills-level-badge">Advanced</span>
+                            </div>
+                            <div class="skills-text-item">
+                                <span>Project Lifecycle Control (JIRA)</span>
+                                <span class="skills-level-badge">Intermediate</span>
+                            </div>
+                            <div class="skills-text-item">
+                                <span>Vendor & Partner Relations</span>
+                                <span class="skills-level-badge">Expert</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 3: Domain Management -->
+                    <div class="skill-category glass-card">
+                        <h3 class="skill-category-title">
+                            <i class="fas fa-hotel"></i>
+                            <span>Domain Management</span>
+                        </h3>
+                        <div class="skills-text-list">
+                            <div class="skills-text-item">
+                                <span>Hospitality Administration</span>
+                                <span class="skills-level-badge">Advanced</span>
+                            </div>
+                            <div class="skills-text-item">
+                                <span>Client Relationship Management (CRM)</span>
+                                <span class="skills-level-badge">Expert</span>
+                            </div>
+                            <div class="skills-text-item">
+                                <span>Process Optimization & Mapping</span>
+                                <span class="skills-level-badge">Intermediate</span>
+                            </div>
+                            <div class="skills-text-item">
+                                <span>Cross-Functional Leadership</span>
+                                <span class="skills-level-badge">Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section fade-in">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Get In Touch</h2>
+                    <p>Let's collaborate on data-driven operations planning or hospitality management opportunities.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left: Contact Details -->
+                    <div class="contact-info-cards">
+
+                        <a href="mailto:Mohammedosama3344@gmail.com" class="contact-info-card glass-card">
+                            <div class="edu-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-detail">
+                                <h4>Email Address</h4>
+                                <p>Mohammedosama3344@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <a href="https://linkedin.com/in/osama-akhter-mohammed" target="_blank"
+                            rel="noopener noreferrer" class="contact-info-card glass-card">
+                            <div class="edu-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div class="contact-detail">
+                                <h4>LinkedIn Profile</h4>
+                                <p>linkedin.com/in/osama-akhter-mohammed</p>
+                            </div>
+                        </a>
+
+                        <div class="contact-info-card glass-card">
+                            <div class="edu-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-detail">
+                                <h4>Location</h4>
+                                <p>New York Metropolitan Area</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: WhatsApp CTA Card -->
+                    <div class="contact-form-wrapper glass-card whatsapp-cta-card">
+                        <a href="https://wa.me/16468062941" target="_blank" rel="noopener noreferrer"
+                            class="whatsapp-cta-link">
+                            <div class="whatsapp-cta-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <h3>Chat Directly on WhatsApp</h3>
+                            <p>Have an operational inquiry, project proposal, or collaboration request? Let's connect
+                                instantly.</p>
+                            <span class="btn btn-primary whatsapp-cta-btn">
+                                Start Conversation <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Toast Success Notification -->
+    <div class="toast-msg" id="toast-message" aria-live="polite">
+        <i class="fas fa-check-circle"></i>
+        <span>Message sent successfully!</span>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-socials">
+                <a href="mailto:Mohammedosama3344@gmail.com" class="footer-social-link" title="Email Osama"><i
+                        class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/osama-akhter-mohammed" target="_blank" rel="noopener noreferrer"
+                    class="footer-social-link" title="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>&copy; 2026 Osama Akhter Mohammed. All rights reserved. | Business Analytics & Operations Management</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
